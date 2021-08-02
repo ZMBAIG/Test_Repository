@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+body html {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(./image/Foto-003.jpg);
+  background-color: aquamarine;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/*=======================Quotation text===========================================*/
+.quote {
+  width: 50%;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  color: white;
+  line-height: 1em;
+  font-family: Alex Brush;
+  text-shadow: 6spx 6px 8px #fff;
+}
+
+.text-01,
+.text-03 {
+  font-family: Alex Brush;
+  padding: 10px;
+  width: 40%;
+  font-size: 2em;
+  color: rgb(170, 168, 168);
+}
+
+.quote .text-02 {
+  font-family: sans-serif;
+  font-size: 2em;
+}
+.text-04 {
+  font-size: 12px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+/*=======================Top navigation menu=======================================*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(61, 60, 60);
+  border-bottom: 6px solid white;
+}
+
+li {
+  float: left;
+  font-family: sans-serif;
+  font-size: 1em;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  letter-spacing: 15px;
+  color: white;
+  text-align: right;
+}
+
+/*==================Lower Exhibition section===================================*/
+
+.section {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.exhibition {
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 8px solid rgb(110, 109, 109);
+}
+
+.exhib-menu {
+  background-color: rgb(242, 242, 247);
+  margin-bottom: 5%;
+  border-radius: 10px;
+  padding: 20px 10px;
+  flex-basis: 30%;
+  box-shadow: 3px 3px 5px 6px rgb(146, 146, 146);
+}
+
+h2 {
+  letter-spacing: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: sans-serif;
+}
+/*=================Footer with companylogo=====================================*/
+.footer {
+  text-align: center;
+}
+.logo {
+  font-family: Alex Brush;
+  font-size: 3em;
+}
+
+/*laptop*/
+@media (max-width: 992px) {
+  .quote,
+  .container,
+  .topnav,
+  .section {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    font-size: 50%;
+  }
+}
+
+/*tablet*/
+@media (max-width: 768px) {
+  .quote,
+  .container,
+  .topnav,
+  .section {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    font-size: 100%;
+  }
+}
+
+/*mobile*/
+@media (max-width: 576px) {
+  .quote,
+  .container,
+  .section {
+    flex-direction: column;
+    width: 100%;
+    font-size: 80%;
+  }
+  .topnav {
+    font-size: 50%;
+  }
+}

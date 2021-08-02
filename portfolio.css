@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 14px;
+}
+.portfolio {
+  padding: 2em;
+  margin: 2em;
+}
+h1 {
+  border: 1px solid black;
+  box-shadow: rgb(138, 135, 135);
+  padding: 2px;
+  margin: 3px;
+}

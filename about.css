@@ -1,0 +1,31 @@
+* {
+  margin: 10px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid rgb(28, 29, 28);
+  padding: 10px;
+  background-color: rgb(197, 193, 193);
+}
+.image {
+  float: right;
+  width: 40%;
+  height: auto;
+  box-shadow: 3px 3px 5px 6px rgb(92, 91, 91);
+  margin-bottom: 16px;
+}
+a {
+  color: white;
+}
+iframe {
+  border: dashed rgb(80, 0, 0) 0.5em;
+  width: 80%;
+  margin-left: 3em;
+}
